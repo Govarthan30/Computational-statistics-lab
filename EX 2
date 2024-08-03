@@ -1,0 +1,14 @@
+import plotly.express as px
+df=px.data.iris()
+print(df.head(10))
+num_rows, num_columns = df.shape
+print("No.of.rows:",num_rows,"\nNo.of.columns:", num_columns)
+mean_valuesl = df['sepal_length'].mean()
+mean_valuesw = df['sepal_width'].mean()
+mean_valuepl = df['petal_length'].mean()
+mean_valuepw = df['petal_width'].mean()
+print("Mean of sepal length:",mean_valuesl)
+print("Mean of sepal width:",mean_valuesw)
+print("Mean of petal length:",mean_valuepl)
+print("Mean of petal width:",mean_valuepw)
+print(df.columns)
